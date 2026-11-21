@@ -1,5 +1,7 @@
 # kvstore
 
+[![CI](https://github.com/Rishab-Mal/kvstore/actions/workflows/ci.yml/badge.svg)](https://github.com/Rishab-Mal/kvstore/actions/workflows/ci.yml)
+
 A multithreaded, Redis-style key-value server in C++20. Clients connect over
 TCP and send `GET` / `SET` / `DEL`. The server answers from a sharded in-memory
 hash map, and every write goes into an append-only log that is replayed on
